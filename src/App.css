@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+* {
+  font-family: Catamaran;
+  font-size: 18px;
+}
+*::selection {
+  background-color: #ffa500;
+}
+.mint-btn {
+  background-color: #ffa500;
+  /* background-image: linear-gradient(to right, #ed8a4c 0, #ea485c 100%); */
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 40px;
+  font-size: 16px;
+  border: none;
+  font-family: Catamaran;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  position: relative;
+  overflow: hidden;
+}
+.mint-btn {
+  /* box-shadow: 0 3px 32px rgba(237, 130, 78, 0.54); */
+  color: #fff;
+}
+.mint-btn:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background-color: #ed824e;
+}
+.mint-btn span {
+  position: relative;
+  z-index: 2;
+}
+.mint-btn:hover::after {
+  opacity: 1;
+}
+body {
+  background-color: #1f2641 !important;
+  background-image: url(./images/bodybg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.mintwrap {
+  display: flex;
+}
+.minus,
+.plus {
+  height: auto !important;
+  line-height: 40px !important;
+}
+.container {
+  max-width: 1080px !important;
+}
+.mintingsection {
+  z-index: 3;
+  position: relative;
+}
+.mint-btn b {
+  font-weight: 900 !important;
+  font-size: 22px;
+}
+.mintwrap {
+  display: flex;
+}
+.hero,
+.herobg > .container > .row {
+  min-height: 90vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Raleway;
+}
+th {
+  padding-left: 0;
+}
+td {
+  font-weight: 400;
+  /* color: #aab2cd; */
+}
+/* .herobg {
+  background-image: url("./images/newest.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 700px;
+  max-width: 1600px;
+  margin: auto; */
+
+/* }
+@media only screen and (max-width: 600px) {
+  .herobg {
+   background-size: 600px;
+  }
+} */
+.footer {
+  background-color: #1f2641;
+}
+.carddiv {
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #3e4a50;
+  background-image: linear-gradient(-234deg, #3e4a50 0%, #3e4a50 100%);
+  box-shadow: 0 0 51px #3e4a50;
+  transition-duration: 0.31s;
+}
+.carddiv:hover,
+.carddiv:focus {
+  box-shadow: 0 0 25px #3e4a50;
+  transition-duration: 0.31s;
+}
+.logo {
+  width: 150px;
+}
+.footer * {
+  text-decoration: none;
+  color: #fff6;
+}
+.footer *:hover {
+  color: #ffa500;
+}
+.supplytext {
+  font-family: Catamaran;
+}
+.fda {
+  color: #ffd706;
+}
